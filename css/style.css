@@ -111,19 +111,24 @@ header.fff {
 }
 header nav {
   height: 100%;
-  flex: 1;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 header nav .logo {
   height: 100%;
+  flex: 1;
 }
 header nav .logo a {
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 576px) {
+  header nav .logo a {
+    justify-content: flex-start;
+  }
 }
 header nav .logo a img {
   max-height: 80px;
@@ -225,9 +230,21 @@ header nav .btns .social li a:hover {
 header nav .btns .social li a:hover i {
   color: #dc4f34;
 }
+header nav .btns .social li:last-child a {
+  padding: 8px;
+  width: auto;
+  font-size: 12px;
+  border-radius: 8px;
+  color: #000;
+}
+@media (max-width: 576px) {
+  header nav .btns .social li {
+    padding: 0 2px;
+  }
+}
 header nav .btns .toogler {
   display: none;
-  width: 45px;
+  width: 40px;
 }
 @media (max-width: 768px) {
   header nav .btns .toogler {

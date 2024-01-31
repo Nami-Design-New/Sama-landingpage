@@ -129,13 +129,16 @@ header {
   }
   nav {
     height: 100%;
-    flex: 1;
     @include space-between();
     .logo {
       height: 100%;
+      flex: 1;
       a {
         height: 100%;
         @include centerFlex();
+        @media (max-width: 576px) {
+          justify-content: flex-start;
+        }
         img {
           max-height: 80px;
         }
@@ -228,11 +231,23 @@ header {
               }
             }
           }
+          &:last-child {
+            a {
+              padding: 8px;
+              width: auto;
+              font-size: 12px;
+              border-radius: 8px;
+              color: #000;
+            }
+          }
+          @media (max-width: 576px) {
+            padding: 0 2px;
+          }
         }
       }
       .toogler {
         display: none;
-        width: 45px;
+        width: 40px;
         @media (max-width: 768px) {
           display: block;
         }
