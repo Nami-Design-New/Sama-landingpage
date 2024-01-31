@@ -111,6 +111,7 @@ header.fff {
 }
 header nav {
   height: 100%;
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -128,6 +129,7 @@ header nav .logo a img {
   max-height: 80px;
 }
 header nav .nav-links {
+  flex: 3;
   height: 100%;
 }
 @media (max-width: 768px) {
@@ -153,6 +155,7 @@ header nav .nav-links {
 }
 header nav .nav-links ul {
   display: flex;
+  justify-content: center;
   height: 100%;
 }
 header nav .nav-links ul .nav-link {
@@ -188,6 +191,7 @@ header nav .nav-links ul .nav-link a::after {
 }
 header nav .btns {
   display: flex;
+  flex: 1;
   height: 100%;
 }
 header nav .btns .social {

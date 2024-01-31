@@ -129,6 +129,7 @@ header {
   }
   nav {
     height: 100%;
+    flex: 1;
     @include space-between();
     .logo {
       height: 100%;
@@ -141,6 +142,7 @@ header {
       }
     }
     .nav-links {
+      flex: 3;
       height: 100%;
       @media (max-width: 768px) {
         position: fixed;
@@ -163,6 +165,7 @@ header {
       }
       ul {
         display: flex;
+        justify-content: center;
         height: 100%;
         .nav-link {
           height: 100%;
@@ -198,6 +201,7 @@ header {
     }
     .btns {
       display: flex;
+      flex: 1;
       height: 100%;
       .social {
         display: flex;
