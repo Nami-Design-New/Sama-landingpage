@@ -153,7 +153,7 @@ header {
         left: -100%;
         top: 100px;
         width: 100%;
-        height: calc(100vh - 100px);
+        height: calc(65vh - 100px);
         &.showing {
           left: 0;
           background: $white;
@@ -162,7 +162,9 @@ header {
           flex-direction: column;
           justify-content: center;
           .nav-link {
-            height: 70px !important;
+            height: 60px !important;
+            padding: 0 24px !important;
+            justify-content: flex-start !important;
           }
         }
       }
@@ -315,7 +317,7 @@ main {
         }
         p {
           font-size: 16px;
-          color: $gray;
+          color: $dark;
           @media (max-width: 576px) {
             font-size: 14px;
           }

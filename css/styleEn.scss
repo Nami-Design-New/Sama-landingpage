@@ -152,7 +152,7 @@ header {
         left: -100%;
         top: 100px;
         width: 100%;
-        height: calc(100vh - 100px);
+        height: calc(65vh - 100px);
         &.showing {
           left: 0;
           background: $white;
@@ -161,7 +161,9 @@ header {
           flex-direction: column;
           justify-content: center;
           .nav-link {
-            height: 70px !important;
+            height: 60px !important;
+            padding: 0 24px !important;
+            justify-content: flex-start !important;
           }
         }
       }
@@ -303,10 +305,10 @@ main {
           gap: 16px;
         }
         h1 {
-          font-size: 42px;
+          font-size: 36px;
           font-weight: 600;
           color: $second;
-          line-height: 58px;
+          line-height: 54px;
           @media (max-width: 576px) {
             font-size: 32px;
             line-height: 52px;
@@ -410,16 +412,16 @@ main {
         font-size: 20px;
         margin-bottom: 12px !important;
         position: relative;
-        width: 80px;
-        padding-right: 8px !important;
+        width: 100%;
+        padding-left: 8px !important;
         &::after {
           position: absolute;
-          right: -4px;
+          left: -4px;
           width: 8px;
           height: 8px;
           border-radius: 50%;
           position: absolute;
-          top: 58%;
+          top: 50%;
           transform: translateY(-50%);
           content: '';
           background: $main;

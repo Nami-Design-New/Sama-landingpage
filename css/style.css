@@ -144,7 +144,7 @@ header nav .nav-links {
     left: -100%;
     top: 100px;
     width: 100%;
-    height: calc(100vh - 100px);
+    height: calc(65vh - 100px);
   }
   header nav .nav-links.showing {
     left: 0;
@@ -155,7 +155,9 @@ header nav .nav-links {
     justify-content: center;
   }
   header nav .nav-links ul .nav-link {
-    height: 70px !important;
+    height: 60px !important;
+    padding: 0 24px !important;
+    justify-content: flex-start !important;
   }
 }
 header nav .nav-links ul {
@@ -324,7 +326,7 @@ main .hero-section .container .content h1 {
 }
 main .hero-section .container .content p {
   font-size: 16px;
-  color: #777777;
+  color: #1f1f1f;
 }
 @media (max-width: 576px) {
   main .hero-section .container .content p {
