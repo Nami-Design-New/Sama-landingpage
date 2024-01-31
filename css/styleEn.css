@@ -142,8 +142,8 @@ header nav .nav-links {
     transition: all 0.5s ease-in-out;
     left: -100%;
     top: 100px;
-    width: 100%;
-    height: calc(65vh - 100px);
+    width: 40%;
+    height: calc(100vh - 100px);
   }
   header nav .nav-links.showing {
     left: 0;
@@ -151,7 +151,8 @@ header nav .nav-links {
   }
   header nav .nav-links ul {
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start !important;
+    padding-top: 40px;
   }
   header nav .nav-links ul .nav-link {
     height: 60px !important;
